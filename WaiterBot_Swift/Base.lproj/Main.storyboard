@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WaiterBot" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="-10" translatesAutoresizingMaskIntoConstraints="NO" id="Mpl-jo-PFt" userLabel="bottom stack">
+                                <rect key="frame" x="122.5" y="253.5" width="130" height="160"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="-10" translatesAutoresizingMaskIntoConstraints="NO" id="Bwi-uy-PJE" userLabel="top stack">
+                                        <rect key="frame" x="0.0" y="0.0" width="130" height="110"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iJY-gb-Kcg">
+                                                <rect key="frame" x="35" y="0.0" width="60" height="60"/>
+                                                <gestureRecognizers/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="60" id="FPp-oH-WYu"/>
+                                                    <constraint firstAttribute="height" constant="60" id="cjy-Vp-kNm"/>
+                                                </constraints>
+                                                <state key="normal" backgroundImage="up"/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="X8B-hk-AoI" appends="YES" id="BVF-Ku-bRt"/>
+                                                </connections>
+                                            </button>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="y3l-sw-g8d" userLabel="right and left stack">
+                                                <rect key="frame" x="0.0" y="50" width="130" height="60"/>
+                                                <subviews>
+                                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gEX-Ta-oHC">
+                                                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                        <gestureRecognizers/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="60" id="RtA-HW-NV4"/>
+                                                            <constraint firstAttribute="width" constant="60" id="ULX-Jh-7SV"/>
+                                                        </constraints>
+                                                        <state key="normal" backgroundImage="left"/>
+                                                        <connections>
+                                                            <outletCollection property="gestureRecognizers" destination="yae-Bd-BYf" appends="YES" id="bKd-Wn-Ekk"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1x6-9F-bMp">
+                                                        <rect key="frame" x="70" y="0.0" width="60" height="60"/>
+                                                        <gestureRecognizers/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="60" id="8FO-Kr-zKR"/>
+                                                            <constraint firstAttribute="height" constant="60" id="rmm-fn-YeB"/>
+                                                        </constraints>
+                                                        <state key="normal" backgroundImage="right"/>
+                                                        <connections>
+                                                            <outletCollection property="gestureRecognizers" destination="XX9-g9-Bt6" appends="YES" id="BMr-Z4-uXj"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rrs-Xp-5CQ">
+                                        <rect key="frame" x="35" y="100" width="60" height="60"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="aPi-Zk-hfg"/>
+                                            <constraint firstAttribute="width" constant="60" id="gov-3c-rjl"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="down"/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="xh9-BZ-RTI" appends="YES" id="8D4-Tf-ErO"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wheel Control" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="awp-jZ-Lej">
+                                <rect key="frame" x="125.5" y="221.5" width="124" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Arm Control" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xy0-Vl-pZ2">
+                                <rect key="frame" x="135.5" y="81.5" width="104.5" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Xza-J0-tGp" userLabel="Arm stack">
+                                <rect key="frame" x="167.5" y="108.5" width="40" height="90"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pmi-0t-hR2" userLabel="Arm Button up">
+                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="5dR-wF-td6"/>
+                                            <constraint firstAttribute="height" constant="40" id="aHo-F0-Ud7"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="up"/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="t7x-lU-A7s" appends="YES" id="JhX-qD-wEk"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zo7-EL-S3O" userLabel="Arm button down">
+                                        <rect key="frame" x="0.0" y="50" width="40" height="40"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="4Gf-5U-ac1"/>
+                                            <constraint firstAttribute="height" constant="40" id="PpL-3u-dVj"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="down"/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="rJW-tX-luq" appends="YES" id="dgx-VL-NYl"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.62892621755599976" green="0.98793250322341919" blue="0.99608641862869263" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="Xza-J0-tGp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CB3-pK-R77">
+                                <variation key="heightClass=compact" constant="-200"/>
+                            </constraint>
+                            <constraint firstItem="Mpl-jo-PFt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LU8-Ci-X5t"/>
+                            <constraint firstItem="awp-jZ-Lej" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ld4-hF-EVX"/>
+                            <constraint firstItem="Mpl-jo-PFt" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="U9R-Uu-0k8"/>
+                            <constraint firstItem="xy0-Vl-pZ2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Xvv-Jl-TPI">
+                                <variation key="heightClass=compact" constant="-200"/>
+                            </constraint>
+                            <constraint firstItem="Xza-J0-tGp" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-180" id="oFX-vY-xDn">
+                                <variation key="heightClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="xy0-Vl-pZ2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-240" id="sFx-Wy-uef">
+                                <variation key="heightClass=compact" constant="-100"/>
+                            </constraint>
+                            <constraint firstItem="awp-jZ-Lej" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-100" id="viI-XY-7UO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="armDownDefault" destination="rJW-tX-luq" id="ynK-yK-XpA"/>
+                        <outlet property="armUpDefault" destination="t7x-lU-A7s" id="Lui-s5-YLx"/>
+                        <outlet property="motorDownDefault" destination="xh9-BZ-RTI" id="TVb-PN-16S"/>
+                        <outlet property="motorLeftDefault" destination="yae-Bd-BYf" id="ZmK-bJ-fqQ"/>
+                        <outlet property="motorRightDefault" destination="XX9-g9-Bt6" id="w10-nd-lQp"/>
+                        <outlet property="motorUpDefault" destination="X8B-hk-AoI" id="pyF-U9-cel"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <pongPressGestureRecognizer cancelsTouchesInView="NO" allowableMovement="10" minimumPressDuration="0.29999999999999999" id="xh9-BZ-RTI">
+                    <connections>
+                        <action selector="motorDown:" destination="BYZ-38-t0r" id="Xmp-Ag-5qw"/>
+                        <outlet property="delegate" destination="Rrs-Xp-5CQ" id="8o3-RT-qOp"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer cancelsTouchesInView="NO" allowableMovement="10" minimumPressDuration="0.29999999999999999" id="X8B-hk-AoI">
+                    <connections>
+                        <action selector="motorUp:" destination="BYZ-38-t0r" id="jdO-sX-yat"/>
+                        <outlet property="delegate" destination="iJY-gb-Kcg" id="F9n-5L-ixg"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer cancelsTouchesInView="NO" allowableMovement="10" minimumPressDuration="0.29999999999999999" id="XX9-g9-Bt6">
+                    <connections>
+                        <action selector="motorRight:" destination="BYZ-38-t0r" id="mvW-Nj-tJW"/>
+                        <outlet property="delegate" destination="1x6-9F-bMp" id="Rjx-Pe-cah"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer cancelsTouchesInView="NO" allowableMovement="10" minimumPressDuration="0.29999999999999999" id="yae-Bd-BYf">
+                    <connections>
+                        <action selector="motorLeft:" destination="BYZ-38-t0r" id="hZL-of-pp0"/>
+                        <outlet property="delegate" destination="gEX-Ta-oHC" id="2x4-WR-uv8"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer cancelsTouchesInView="NO" allowableMovement="10" minimumPressDuration="0.5" id="t7x-lU-A7s">
+                    <connections>
+                        <action selector="armUp:" destination="BYZ-38-t0r" id="94Y-Uk-O3y"/>
+                        <outlet property="delegate" destination="pmi-0t-hR2" id="XJs-Cu-TFf"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer cancelsTouchesInView="NO" allowableMovement="10" minimumPressDuration="0.5" id="rJW-tX-luq">
+                    <connections>
+                        <action selector="armDown:" destination="BYZ-38-t0r" id="znX-nt-0NP"/>
+                        <outlet property="delegate" destination="Zo7-EL-S3O" id="p6U-RC-6a2"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="136.28185907046478" y="132"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="down" width="256" height="256"/>
+        <image name="left" width="256" height="256"/>
+        <image name="right" width="256" height="256"/>
+        <image name="up" width="256" height="256"/>
+    </resources>
+</document>
