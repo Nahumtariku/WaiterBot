@@ -1,2 +1,2 @@
-# WaiterBot
+# WaiterBot.Git
 WaiterBot
